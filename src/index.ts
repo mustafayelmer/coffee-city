@@ -8,6 +8,7 @@ import {NestApplicationOptions} from "@nestjs/common/interfaces/nest-application
 import helmet from 'helmet';
 import {HttpExceptionFilter, NotFoundExceptionFilter} from "@yelmer-samples/coffee-shared";
 import {InitialService} from "./initial/InitialService";
+import {Logger} from "@nestjs/common";
 
 const port = process.env.HTTP_PORT || 8080;
 
@@ -31,7 +32,9 @@ const bootstrap = async () => {
     const document = SwaggerModule.createDocument(app, options);
     SwaggerModule.setup('/docs', app, document);
     await app.listen(port);
-    console.log(`Application is running on: http://localhost:${port}`);
+    const logger = new Logger('index');
+    logger.log(`-----------------------`);
+    logger.log(`Application is started`);
     InitialService.initialize();
 }
 bootstrap().then();

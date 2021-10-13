@@ -1,4 +1,4 @@
-import {Injectable} from "@nestjs/common";
+import {Injectable, Logger} from "@nestjs/common";
 import {InjectModel} from "@nestjs/mongoose";
 import {Model} from "mongoose";
 import * as uuid from 'uuid';
@@ -15,6 +15,7 @@ import {CityDetail, CityMedium, CityShort, DeleteResponse} from "@yelmer-samples
 @Injectable()
 export class CityService {
     private static _INS: CityService;
+    private readonly logger = new Logger(CityService.name);
 
     constructor(
         @InjectModel(CityEntity.name) private readonly cityModel: Model<CityDocument>,
@@ -96,26 +97,30 @@ export class CityService {
             rec.latest = last.doc;
             const histories = await WeatherService.historyAsync(city.id, last.id);
             histories.forEach(history => {
-                rec.history.push(history.doc);
+                if (history?.doc) {
+                    rec.history.push(history.doc);
+                }
             });
         }
         return rec;
     }
 
     async listShortAsync(): Promise<Array<CityShort>> {
-        const cities = await this.cityModel.find();
+        const cities = await this.cityModel.find().sort({name: 1, _id: 1});
         const cityMap: Record<string, CityShort> = {};
         cities.forEach(city => {
-            const rec = new CityShort();
-            rec.id = city.id;
-            rec.name = city.name;
-            rec.weather = null;
-            cityMap[city.id] = rec;
+            if (city?.id) {
+                const rec = new CityShort();
+                rec.id = city.id;
+                rec.name = city.name;
+                rec.weather = null;
+                cityMap[city.id] = rec;
+            }
         });
         const cityIds: Array<string> = cities.map(city => city.id);
         const weathers = await WeatherService.latestList(cityIds);
         weathers.forEach(weather => {
-            if (cityMap[weather.city] != undefined) {
+            if (weather?.city && cityMap[weather.city] != undefined) {
                 cityMap[weather.city].weather = weather.doc.main;
             }
         });
@@ -123,19 +128,21 @@ export class CityService {
     }
 
     async listMediumAsync(): Promise<Array<CityMedium>> {
-        const cities = await this.cityModel.find();
+        const cities = await this.cityModel.find().sort({name: 1, _id: 1});
         const cityMap: Record<string, CityMedium> = {};
         cities.forEach(city => {
-            const rec = new CityMedium();
-            rec.id = city.id;
-            rec.name = city.name;
-            rec.weather = null;
-            cityMap[city.id] = rec;
+            if (city?.id) {
+                const rec = new CityMedium();
+                rec.id = city.id;
+                rec.name = city.name;
+                rec.weather = null;
+                cityMap[city.id] = rec;
+            }
         });
         const cityIds: Array<string> = cities.map(city => city.id);
         const weathers = await WeatherService.latestList(cityIds);
         weathers.forEach(weather => {
-            if (cityMap[weather.city] != undefined) {
+            if (weather?.city && cityMap[weather.city] != undefined) {
                 cityMap[weather.city].weather = weather.doc;
             }
         });
@@ -143,7 +150,7 @@ export class CityService {
     }
 
     async listBasicAsync(): Promise<Array<CityEntity>> {
-        const cities = await this.cityModel.find();
+        const cities = await this.cityModel.find().sort({name: 1, _id: 1});
         return cities.map(city => CityService._clearEntity(city));
     }
 

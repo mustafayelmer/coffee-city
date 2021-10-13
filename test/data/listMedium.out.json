@@ -1,0 +1,240 @@
+[
+  {
+    "id": "465880a5-62d5-447c-9b06-6618a51fc8e1",
+    "name": "Amsterdam",
+    "weather": {
+      "coord": {
+        "lon": 4.8897,
+        "lat": 52.374
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 9.02,
+        "feels_like": 9.02,
+        "temp_min": 6.9,
+        "temp_max": 11.62,
+        "pressure": 1025,
+        "humidity": 88
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 0.89,
+        "deg": 339,
+        "gust": 1.79
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1634080830,
+      "sys": {
+        "type": 2,
+        "id": 2011826,
+        "country": "NL",
+        "sunrise": 1634104925,
+        "sunset": 1634143854
+      },
+      "timezone": 7200,
+      "id": 2759794,
+      "name": "Amsterdam",
+      "cod": 200
+    }
+  },
+  {
+    "id": "8fbb7edc-171f-49db-9325-7f7968e4dcd3",
+    "name": "Berlin",
+    "weather": {
+      "coord": {
+        "lon": 13.4105,
+        "lat": 52.5244
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 5.15,
+        "feels_like": 2.29,
+        "temp_min": 2.19,
+        "temp_max": 7.19,
+        "pressure": 1008,
+        "humidity": 82
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.58,
+        "deg": 297,
+        "gust": 4.02
+      },
+      "clouds": {
+        "all": 20
+      },
+      "dt": 1634080792,
+      "sys": {
+        "type": 2,
+        "id": 2011538,
+        "country": "DE",
+        "sunrise": 1634102890,
+        "sunset": 1634141800
+      },
+      "timezone": 7200,
+      "id": 2950159,
+      "name": "Berlin",
+      "cod": 200
+    }
+  },
+  {
+    "id": "c9ead142-4a57-43f9-aad6-76efb981f36f",
+    "name": "London",
+    "weather": {
+      "coord": {
+        "lon": -0.1257,
+        "lat": 51.5085
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 11.23,
+        "feels_like": 10.71,
+        "temp_min": 8.49,
+        "temp_max": 13.43,
+        "pressure": 1027,
+        "humidity": 88
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.57,
+        "deg": 20
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1634080472,
+      "sys": {
+        "type": 2,
+        "id": 268730,
+        "country": "GB",
+        "sunrise": 1634106060,
+        "sunset": 1634145126
+      },
+      "timezone": 3600,
+      "id": 2643743,
+      "name": "London",
+      "cod": 200
+    }
+  },
+  {
+    "id": "32f5bb87-015f-4e93-b5b9-256b83ca0415",
+    "name": "Paris",
+    "weather": {
+      "coord": {
+        "lon": 2.3488,
+        "lat": 48.8534
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 12.07,
+        "feels_like": 11.58,
+        "temp_min": 10.34,
+        "temp_max": 13.1,
+        "pressure": 1024,
+        "humidity": 86
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.68,
+        "deg": 42,
+        "gust": 6.26
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1634080215,
+      "sys": {
+        "type": 2,
+        "id": 2012208,
+        "country": "FR",
+        "sunrise": 1634105267,
+        "sunset": 1634144732
+      },
+      "timezone": 7200,
+      "id": 2988507,
+      "name": "Paris",
+      "cod": 200
+    }
+  },
+  {
+    "id": "9efaf59e-1d93-4339-ac67-398422197b62",
+    "name": "Roma",
+    "weather": {
+      "coord": {
+        "lon": -75.4557,
+        "lat": 43.2128
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 19.25,
+        "feels_like": 19.24,
+        "temp_min": 17.44,
+        "temp_max": 20.5,
+        "pressure": 1015,
+        "humidity": 77
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 1
+      },
+      "dt": 1634080934,
+      "sys": {
+        "type": 2,
+        "id": 2007612,
+        "country": "US",
+        "sunrise": 1634037123,
+        "sunset": 1634077445
+      },
+      "timezone": -14400,
+      "id": 5134295,
+      "name": "Rome",
+      "cod": 200
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2c3bf3e5-9582-45a5-a356-ad69954aef04",
+    "name": "Amsterdam",
+    "weather": {
+      "temp": 12.81,
+      "feels_like": 12.52,
+      "temp_min": 11.03,
+      "temp_max": 14.95,
+      "pressure": 1021,
+      "humidity": 91
+    }
+  },
+  {
+    "id": "356acdce-f64d-450a-bb57-a86cf47a551c",
+    "name": "Berlin",
+    "weather": {
+      "temp": 10.31,
+      "feels_like": 9.67,
+      "temp_min": 9.03,
+      "temp_max": 12.64,
+      "pressure": 1005,
+      "humidity": 87
+    }
+  },
+  {
+    "id": "dfab851e-c37a-44b6-af4c-c9c127fd9238",
+    "name": "London",
+    "weather": {
+      "temp": 10.76,
+      "feels_like": 10.27,
+      "temp_min": 9.41,
+      "temp_max": 12.92,
+      "pressure": 1026,
+      "humidity": 91
+    }
+  },
+  {
+    "id": "8e2b0cc4-e583-4eb4-9097-c71587027ba5",
+    "name": "Paris",
+    "weather": {
+      "temp": 12.16,
+      "feels_like": 11.68,
+      "temp_min": 10.48,
+      "temp_max": 13.77,
+      "pressure": 1025,
+      "humidity": 86
+    }
+  },
+  {
+    "id": "775a761c-7cbb-4dc1-b6f8-c3bb9b0edf94",
+    "name": "Roma",
+    "weather": {
+      "temp": 13.34,
+      "feels_like": 13.18,
+      "temp_min": 12.2,
+      "temp_max": 16.64,
+      "pressure": 1018,
+      "humidity": 94
+    }
+  }
+]

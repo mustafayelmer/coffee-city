@@ -1,0 +1,22 @@
+[
+  {
+    "id": "465880a5-62d5-447c-9b06-6618a51fc8e1",
+    "name": "Amsterdam"
+  },
+  {
+    "id": "8fbb7edc-171f-49db-9325-7f7968e4dcd3",
+    "name": "Berlin"
+  },
+  {
+    "id": "c9ead142-4a57-43f9-aad6-76efb981f36f",
+    "name": "London"
+  },
+  {
+    "id": "32f5bb87-015f-4e93-b5b9-256b83ca0415",
+    "name": "Paris"
+  },
+  {
+    "id": "9efaf59e-1d93-4339-ac67-398422197b62",
+    "name": "Roma"
+  }
+]
